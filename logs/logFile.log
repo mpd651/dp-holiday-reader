@@ -1,0 +1,806 @@
+30-05-2022 08:50:37.994 [INFO] es.snc.reader.App - Starting App on SNC002 with PID 36680 (C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader\target\classes started by mperez in C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader)
+30-05-2022 08:50:38.000 [INFO] es.snc.reader.App - No active profile set, falling back to default profiles: default
+30-05-2022 08:50:40.596 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Error, required fields are empty. Sheet: Vacaciones. From row: 5
+30-05-2022 08:50:40.597 [INFO] es.snc.reader.excel.impl.ExcelReaderImpl - Rows readed from sheet Vacaciones: 4
+30-05-2022 08:50:40.770 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Wrong data, cannot upload excel
+30-05-2022 08:50:40.820 [INFO] es.snc.reader.App - Started App in 3.126 seconds (JVM running for 3.564)
+30-05-2022 08:53:09.427 [INFO] es.snc.reader.App - Starting App on SNC002 with PID 36600 (C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader\target\classes started by mperez in C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader)
+30-05-2022 08:53:09.429 [INFO] es.snc.reader.App - No active profile set, falling back to default profiles: default
+30-05-2022 08:53:11.352 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Error, required fields are empty. Sheet: Vacaciones. From row: 5
+30-05-2022 08:53:11.353 [INFO] es.snc.reader.excel.impl.ExcelReaderImpl - Rows readed from sheet Vacaciones: 4
+30-05-2022 08:53:11.677 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Wrong data, cannot upload excel
+30-05-2022 08:53:11.716 [INFO] es.snc.reader.App - Started App in 2.547 seconds (JVM running for 2.989)
+30-05-2022 08:53:40.651 [INFO] es.snc.reader.App - Starting App on SNC002 with PID 35924 (C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader\target\classes started by mperez in C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader)
+30-05-2022 08:53:40.656 [INFO] es.snc.reader.App - No active profile set, falling back to default profiles: default
+30-05-2022 08:57:12.963 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Error, required fields are empty. Sheet: Vacaciones. From row: 5
+30-05-2022 09:02:45.806 [INFO] es.snc.reader.App - Starting App on SNC002 with PID 43336 (C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader\target\classes started by mperez in C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader)
+30-05-2022 09:02:45.808 [INFO] es.snc.reader.App - No active profile set, falling back to default profiles: default
+30-05-2022 09:02:47.813 [INFO] es.snc.reader.excel.impl.ExcelReaderImpl - Rows readed from sheet Vacaciones: 4
+30-05-2022 09:02:48.213 [ERROR] es.snc.reader.dpverification.DpVerification - Request holiday for employee 72041150K, from date 2022-03-23 until date 2022-04-25 was not created.Not enough remaining time for the holidays.
+30-05-2022 09:02:48.253 [ERROR] es.snc.reader.dpverification.DpVerification - Request holiday for employee 72041150K, from date 2022-08-08 until date 2022-08-12 was not created.Error message: UNPROCESSABLE_OVERLAPPING_DATES
+30-05-2022 09:02:48.285 [ERROR] es.snc.reader.dpverification.DpVerification - Request holiday for employee 72041150K, from date 2022-08-08 until date 2022-08-12 was not created.Error message: UNPROCESSABLE_OVERLAPPING_DATES
+30-05-2022 09:02:48.285 [ERROR] es.snc.reader.dpverification.DpVerification - Wrong data, cannot upload excel
+30-05-2022 09:02:48.332 [INFO] es.snc.reader.App - Started App in 2.795 seconds (JVM running for 3.248)
+30-05-2022 09:03:23.883 [INFO] es.snc.reader.App - Starting App on SNC002 with PID 35884 (C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader\target\classes started by mperez in C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader)
+30-05-2022 09:03:23.885 [INFO] es.snc.reader.App - No active profile set, falling back to default profiles: default
+30-05-2022 09:03:25.793 [ERROR] es.snc.reader.dp.impl.DpEmployeeServiceImpl - Failed to connect with Digital People API. DpEmployeeService create. 
+org.springframework.web.client.HttpClientErrorException$NotFound: 404 : [no body]
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:184)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:125)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:782)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:740)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:674)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:612)
+	at es.snc.reader.dp.impl.DpEmployeeServiceImpl.searchByCardId(DpEmployeeServiceImpl.java:152)
+	at es.snc.reader.utils.FindSetters.requestHolidayAuxDtoSetters(FindSetters.java:126)
+	at es.snc.reader.excel.impl.ExcelReaderImpl.readHolidayRequests(ExcelReaderImpl.java:171)
+	at es.snc.reader.excel.impl.ExcelReaderImpl.readExcelSheets(ExcelReaderImpl.java:77)
+	at es.snc.reader.service.impl.ServiceImpl.startService(ServiceImpl.java:49)
+	at es.snc.reader.App.init(App.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at es.snc.reader.App.main(App.java:27)
+30-05-2022 09:03:25.794 [ERROR] es.snc.reader.service.impl.ServiceImpl - Error. Employee with IdCard asdfas1 not found in database. Line 5
+30-05-2022 09:03:25.794 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Error, required fields are empty. Sheet: Vacaciones. From row: 5
+30-05-2022 09:03:25.794 [INFO] es.snc.reader.excel.impl.ExcelReaderImpl - Rows readed from sheet Vacaciones: 28
+30-05-2022 09:03:25.954 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Wrong data, cannot upload excel
+30-05-2022 09:03:25.999 [INFO] es.snc.reader.App - Started App in 2.386 seconds (JVM running for 2.836)
+30-05-2022 09:03:42.921 [INFO] es.snc.reader.App - Starting App on SNC002 with PID 34348 (C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader\target\classes started by mperez in C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader)
+30-05-2022 09:03:42.923 [INFO] es.snc.reader.App - No active profile set, falling back to default profiles: default
+30-05-2022 09:03:44.817 [ERROR] es.snc.reader.dp.impl.DpEmployeeServiceImpl - Failed to connect with Digital People API. DpEmployeeService create. 
+org.springframework.web.client.HttpClientErrorException$NotFound: 404 : [no body]
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:184)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:125)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:782)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:740)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:674)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:612)
+	at es.snc.reader.dp.impl.DpEmployeeServiceImpl.searchByCardId(DpEmployeeServiceImpl.java:152)
+	at es.snc.reader.utils.FindSetters.requestHolidayAuxDtoSetters(FindSetters.java:126)
+	at es.snc.reader.excel.impl.ExcelReaderImpl.readHolidayRequests(ExcelReaderImpl.java:171)
+	at es.snc.reader.excel.impl.ExcelReaderImpl.readExcelSheets(ExcelReaderImpl.java:77)
+	at es.snc.reader.service.impl.ServiceImpl.startService(ServiceImpl.java:49)
+	at es.snc.reader.App.init(App.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at es.snc.reader.App.main(App.java:27)
+30-05-2022 09:03:44.817 [ERROR] es.snc.reader.service.impl.ServiceImpl - Error. Employee with IdCard asdfas1 not found in database. Line 5
+30-05-2022 09:03:44.818 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Error, required fields are empty. Sheet: Vacaciones. From row: 5
+30-05-2022 09:03:44.818 [INFO] es.snc.reader.excel.impl.ExcelReaderImpl - Rows readed from sheet Vacaciones: 28
+30-05-2022 09:03:44.993 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Wrong data, cannot upload excel
+30-05-2022 09:03:45.036 [INFO] es.snc.reader.App - Started App in 2.381 seconds (JVM running for 2.832)
+30-05-2022 09:04:40.756 [INFO] es.snc.reader.App - Starting App on SNC002 with PID 19264 (C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader\target\classes started by mperez in C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader)
+30-05-2022 09:04:40.758 [INFO] es.snc.reader.App - No active profile set, falling back to default profiles: default
+30-05-2022 09:04:42.656 [ERROR] es.snc.reader.dp.impl.DpEmployeeServiceImpl - Failed to connect with Digital People API. DpEmployeeService create. 
+org.springframework.web.client.HttpClientErrorException$NotFound: 404 : [no body]
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:184)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:125)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:782)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:740)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:674)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:612)
+	at es.snc.reader.dp.impl.DpEmployeeServiceImpl.searchByCardId(DpEmployeeServiceImpl.java:152)
+	at es.snc.reader.utils.FindSetters.requestHolidayAuxDtoSetters(FindSetters.java:126)
+	at es.snc.reader.excel.impl.ExcelReaderImpl.readHolidayRequests(ExcelReaderImpl.java:171)
+	at es.snc.reader.excel.impl.ExcelReaderImpl.readExcelSheets(ExcelReaderImpl.java:77)
+	at es.snc.reader.service.impl.ServiceImpl.startService(ServiceImpl.java:49)
+	at es.snc.reader.App.init(App.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at es.snc.reader.App.main(App.java:27)
+30-05-2022 09:04:42.657 [ERROR] es.snc.reader.service.impl.ServiceImpl - Error. Employee with IdCard asdfas1 not found in database. Line 5
+30-05-2022 09:04:42.657 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Error, required fields are empty. Sheet: Vacaciones. From row: 5
+30-05-2022 09:04:42.658 [INFO] es.snc.reader.excel.impl.ExcelReaderImpl - Rows readed from sheet Vacaciones: 28
+30-05-2022 09:04:42.826 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Wrong data, cannot upload excel
+30-05-2022 09:04:42.871 [INFO] es.snc.reader.App - Started App in 2.382 seconds (JVM running for 2.839)
+30-05-2022 09:04:56.427 [INFO] es.snc.reader.App - Starting App on SNC002 with PID 29328 (C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader\target\classes started by mperez in C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader)
+30-05-2022 09:04:56.429 [INFO] es.snc.reader.App - No active profile set, falling back to default profiles: default
+30-05-2022 09:04:58.323 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Error, required fields are empty. Sheet: Vacaciones. From row: 5
+30-05-2022 09:04:58.324 [INFO] es.snc.reader.excel.impl.ExcelReaderImpl - Rows readed from sheet Vacaciones: 28
+30-05-2022 09:04:58.485 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Wrong data, cannot upload excel
+30-05-2022 09:04:58.538 [INFO] es.snc.reader.App - Started App in 2.379 seconds (JVM running for 2.829)
+30-05-2022 09:05:49.119 [INFO] es.snc.reader.App - Starting App on SNC002 with PID 41032 (C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader\target\classes started by mperez in C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader)
+30-05-2022 09:05:49.121 [INFO] es.snc.reader.App - No active profile set, falling back to default profiles: default
+30-05-2022 09:05:50.988 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Error, required fields are empty. Sheet: Vacaciones. From row: 5
+30-05-2022 09:05:50.989 [INFO] es.snc.reader.excel.impl.ExcelReaderImpl - Rows readed from sheet Vacaciones: 28
+30-05-2022 09:05:51.173 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Wrong data, cannot upload excel
+30-05-2022 09:05:51.216 [INFO] es.snc.reader.App - Started App in 2.366 seconds (JVM running for 2.82)
+30-05-2022 09:14:49.606 [INFO] es.snc.reader.App - Starting App on SNC002 with PID 42172 (C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader\target\classes started by mperez in C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader)
+30-05-2022 09:14:49.608 [INFO] es.snc.reader.App - No active profile set, falling back to default profiles: default
+30-05-2022 09:14:51.532 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Error, required fields are empty. Sheet: Vacaciones. From row: 5
+30-05-2022 09:14:51.532 [INFO] es.snc.reader.excel.impl.ExcelReaderImpl - Rows readed from sheet Vacaciones: 28
+30-05-2022 09:14:51.701 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Wrong data, cannot upload excel
+30-05-2022 09:14:51.748 [INFO] es.snc.reader.App - Started App in 2.408 seconds (JVM running for 2.86)
+30-05-2022 09:15:01.367 [INFO] es.snc.reader.App - Starting App on SNC002 with PID 43744 (C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader\target\classes started by mperez in C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader)
+30-05-2022 09:15:01.370 [INFO] es.snc.reader.App - No active profile set, falling back to default profiles: default
+30-05-2022 09:16:38.328 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Error, required fields are empty. Sheet: Vacaciones. From row: 5
+30-05-2022 09:18:28.778 [INFO] es.snc.reader.App - Starting App on SNC002 with PID 42228 (C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader\target\classes started by mperez in C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader)
+30-05-2022 09:18:28.782 [INFO] es.snc.reader.App - No active profile set, falling back to default profiles: default
+30-05-2022 09:18:52.324 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Error, required fields are empty. Sheet: Vacaciones. From row: 5
+30-05-2022 09:19:41.004 [INFO] es.snc.reader.excel.impl.ExcelReaderImpl - Rows readed from sheet Vacaciones: 28
+30-05-2022 09:19:41.259 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Wrong data, cannot upload excel
+30-05-2022 09:19:41.312 [INFO] es.snc.reader.App - Started App in 72.85 seconds (JVM running for 73.542)
+30-05-2022 09:20:27.063 [INFO] es.snc.reader.App - Starting App on SNC002 with PID 33632 (C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader\target\classes started by mperez in C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader)
+30-05-2022 09:20:27.065 [INFO] es.snc.reader.App - No active profile set, falling back to default profiles: default
+30-05-2022 09:20:28.935 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Error, required fields are empty. Sheet: Vacaciones. From row: 5
+30-05-2022 09:20:28.935 [INFO] es.snc.reader.excel.impl.ExcelReaderImpl - Rows readed from sheet Vacaciones: 28
+30-05-2022 09:20:29.115 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Wrong data, cannot upload excel
+30-05-2022 09:20:29.158 [INFO] es.snc.reader.App - Started App in 2.358 seconds (JVM running for 2.808)
+30-05-2022 09:20:57.473 [INFO] es.snc.reader.App - Starting App on SNC002 with PID 32096 (C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader\target\classes started by mperez in C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader)
+30-05-2022 09:20:57.475 [INFO] es.snc.reader.App - No active profile set, falling back to default profiles: default
+30-05-2022 09:20:59.343 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Error, required fields are empty. Sheet: Vacaciones. From row: 5
+30-05-2022 09:20:59.344 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - End of sheet: Vacaciones. Row: 4
+30-05-2022 09:20:59.344 [INFO] es.snc.reader.excel.impl.ExcelReaderImpl - Rows readed from sheet Vacaciones: 52
+30-05-2022 09:20:59.511 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Wrong data, cannot upload excel
+30-05-2022 09:20:59.552 [INFO] es.snc.reader.App - Started App in 2.347 seconds (JVM running for 2.814)
+30-05-2022 09:22:16.042 [INFO] es.snc.reader.App - Starting App on SNC002 with PID 44012 (C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader\target\classes started by mperez in C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader)
+30-05-2022 09:22:16.044 [INFO] es.snc.reader.App - No active profile set, falling back to default profiles: default
+30-05-2022 09:22:17.897 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Error, required fields are empty. Sheet: Vacaciones. From row: 5
+30-05-2022 09:22:17.898 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - End of sheet: Vacaciones. Row: 4
+30-05-2022 09:22:17.898 [INFO] es.snc.reader.excel.impl.ExcelReaderImpl - Rows readed from sheet Vacaciones: 52
+30-05-2022 09:22:18.083 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Wrong data, cannot upload excel
+30-05-2022 09:22:18.124 [INFO] es.snc.reader.App - Started App in 2.348 seconds (JVM running for 2.796)
+30-05-2022 09:23:42.085 [INFO] es.snc.reader.App - Starting App on SNC002 with PID 35924 (C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader\target\classes started by mperez in C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader)
+30-05-2022 09:23:42.087 [INFO] es.snc.reader.App - No active profile set, falling back to default profiles: default
+30-05-2022 09:23:43.998 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Error, required fields are empty. Sheet: Vacaciones. From row: 5
+30-05-2022 09:23:43.999 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - End of sheet: Vacaciones. Row: 4
+30-05-2022 09:23:43.999 [INFO] es.snc.reader.excel.impl.ExcelReaderImpl - Rows readed from sheet Vacaciones: 52
+30-05-2022 09:23:44.222 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Wrong data, cannot upload excel
+30-05-2022 09:23:44.265 [INFO] es.snc.reader.App - Started App in 2.451 seconds (JVM running for 2.92)
+30-05-2022 09:27:35.227 [INFO] es.snc.reader.App - Starting App on SNC002 with PID 29908 (C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader\target\classes started by mperez in C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader)
+30-05-2022 09:27:35.229 [INFO] es.snc.reader.App - No active profile set, falling back to default profiles: default
+30-05-2022 09:27:37.096 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Error, required fields are empty. Sheet: Vacaciones. From row: 5
+30-05-2022 09:27:37.097 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - End of sheet: Vacaciones. Row: 4
+30-05-2022 09:27:37.097 [INFO] es.snc.reader.excel.impl.ExcelReaderImpl - Rows readed from sheet Vacaciones: 52
+30-05-2022 09:27:37.282 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Wrong data, cannot upload excel
+30-05-2022 09:27:37.323 [INFO] es.snc.reader.App - Started App in 2.364 seconds (JVM running for 2.815)
+30-05-2022 09:28:14.983 [INFO] es.snc.reader.App - Starting App on SNC002 with PID 38512 (C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader\target\classes started by mperez in C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader)
+30-05-2022 09:28:14.985 [INFO] es.snc.reader.App - No active profile set, falling back to default profiles: default
+30-05-2022 09:28:16.867 [ERROR] es.snc.reader.dp.impl.DpEmployeeServiceImpl - Failed to connect with Digital People API. DpEmployeeService create. 
+org.springframework.web.client.HttpClientErrorException$NotFound: 404 : [no body]
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:184)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:125)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:782)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:740)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:674)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:612)
+	at es.snc.reader.dp.impl.DpEmployeeServiceImpl.searchByCardId(DpEmployeeServiceImpl.java:152)
+	at es.snc.reader.utils.FindSetters.requestHolidayAuxDtoSetters(FindSetters.java:126)
+	at es.snc.reader.excel.impl.ExcelReaderImpl.readHolidayRequests(ExcelReaderImpl.java:172)
+	at es.snc.reader.excel.impl.ExcelReaderImpl.readExcelSheets(ExcelReaderImpl.java:77)
+	at es.snc.reader.service.impl.ServiceImpl.startService(ServiceImpl.java:49)
+	at es.snc.reader.App.init(App.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at es.snc.reader.App.main(App.java:27)
+30-05-2022 09:28:16.867 [ERROR] es.snc.reader.service.impl.ServiceImpl - Error. Employee with IdCard asdfasd1 not found in database. Line 5
+30-05-2022 09:28:16.867 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Error, required fields are empty. Sheet: Vacaciones. From row: 5
+30-05-2022 09:28:16.868 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - End of sheet: Vacaciones. Row: 4
+30-05-2022 09:28:16.868 [INFO] es.snc.reader.excel.impl.ExcelReaderImpl - Rows readed from sheet Vacaciones: 52
+30-05-2022 09:28:17.192 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Wrong data, cannot upload excel
+30-05-2022 09:28:17.233 [INFO] es.snc.reader.App - Started App in 2.517 seconds (JVM running for 2.967)
+30-05-2022 09:29:45.771 [INFO] es.snc.reader.App - Starting App on SNC002 with PID 31120 (C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader\target\classes started by mperez in C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader)
+30-05-2022 09:29:45.773 [INFO] es.snc.reader.App - No active profile set, falling back to default profiles: default
+30-05-2022 09:29:47.751 [ERROR] es.snc.reader.dp.impl.DpEmployeeServiceImpl - Failed to connect with Digital People API. DpEmployeeService searchByCardId. 
+org.springframework.web.client.HttpClientErrorException$NotFound: 404 : [no body]
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:184)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:125)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:782)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:740)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:674)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:612)
+	at es.snc.reader.dp.impl.DpEmployeeServiceImpl.searchByCardId(DpEmployeeServiceImpl.java:152)
+	at es.snc.reader.utils.FindSetters.requestHolidayAuxDtoSetters(FindSetters.java:126)
+	at es.snc.reader.excel.impl.ExcelReaderImpl.readHolidayRequests(ExcelReaderImpl.java:172)
+	at es.snc.reader.excel.impl.ExcelReaderImpl.readExcelSheets(ExcelReaderImpl.java:77)
+	at es.snc.reader.service.impl.ServiceImpl.startService(ServiceImpl.java:49)
+	at es.snc.reader.App.init(App.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at es.snc.reader.App.main(App.java:27)
+30-05-2022 09:29:47.751 [ERROR] es.snc.reader.service.impl.ServiceImpl - Error. Employee with IdCard asdfasd1 not found in database. Line 5
+30-05-2022 09:29:47.751 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Error, required fields are empty. Sheet: Vacaciones. From row: 5
+30-05-2022 09:29:47.752 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - End of sheet: Vacaciones. Row: 4
+30-05-2022 09:29:47.752 [INFO] es.snc.reader.excel.impl.ExcelReaderImpl - Rows readed from sheet Vacaciones: 52
+30-05-2022 09:29:47.947 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Wrong data, cannot upload excel
+30-05-2022 09:29:47.989 [INFO] es.snc.reader.App - Started App in 2.506 seconds (JVM running for 2.963)
+30-05-2022 09:37:26.046 [INFO] es.snc.reader.App - Starting App on SNC002 with PID 19492 (C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader\target\classes started by mperez in C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader)
+30-05-2022 09:37:26.050 [INFO] es.snc.reader.App - No active profile set, falling back to default profiles: default
+30-05-2022 09:37:41.621 [ERROR] es.snc.reader.dp.impl.DpEmployeeServiceImpl - Failed to connect with Digital People API. DpEmployeeService searchByCardId. 
+org.springframework.web.client.HttpClientErrorException$NotFound: 404 : [no body]
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:184)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:125)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:782)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:740)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:674)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:612)
+	at es.snc.reader.dp.impl.DpEmployeeServiceImpl.searchByCardId(DpEmployeeServiceImpl.java:152)
+	at es.snc.reader.utils.FindSetters.requestHolidayAuxDtoSetters(FindSetters.java:126)
+	at es.snc.reader.excel.impl.ExcelReaderImpl.readHolidayRequests(ExcelReaderImpl.java:172)
+	at es.snc.reader.excel.impl.ExcelReaderImpl.readExcelSheets(ExcelReaderImpl.java:77)
+	at es.snc.reader.service.impl.ServiceImpl.startService(ServiceImpl.java:49)
+	at es.snc.reader.App.init(App.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at es.snc.reader.App.main(App.java:27)
+30-05-2022 09:37:41.623 [ERROR] es.snc.reader.service.impl.ServiceImpl - Error. Employee with IdCard asdfasd1 not found in database. Line 5
+30-05-2022 09:37:49.921 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Error, required fields are empty. Sheet: Vacaciones. From row: 5
+30-05-2022 09:38:01.175 [INFO] es.snc.reader.excel.impl.ExcelReaderImpl - Rows readed from sheet Vacaciones: 4
+30-05-2022 09:38:05.938 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Wrong data, cannot upload excel
+30-05-2022 09:38:05.983 [INFO] es.snc.reader.App - Started App in 40.263 seconds (JVM running for 40.948)
+30-05-2022 09:38:47.324 [INFO] es.snc.reader.App - Starting App on SNC002 with PID 36480 (C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader\target\classes started by mperez in C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader)
+30-05-2022 09:38:47.326 [INFO] es.snc.reader.App - No active profile set, falling back to default profiles: default
+30-05-2022 09:38:49.195 [INFO] es.snc.reader.excel.impl.ExcelReaderImpl - Rows readed from sheet Vacaciones: 3
+30-05-2022 09:38:49.469 [ERROR] es.snc.reader.dpverification.DpVerification - Request holiday for employee 72041150K, from date 2022-03-23 until date 2022-04-25 was not created.Not enough remaining time for the holidays.
+30-05-2022 09:38:49.498 [ERROR] es.snc.reader.dpverification.DpVerification - Request holiday for employee 72041150K, from date 2022-08-08 until date 2022-08-12 was not created.Error message: UNPROCESSABLE_OVERLAPPING_DATES
+30-05-2022 09:38:49.524 [ERROR] es.snc.reader.dpverification.DpVerification - Request holiday for employee 72041150K, from date 2022-08-08 until date 2022-08-12 was not created.Error message: UNPROCESSABLE_OVERLAPPING_DATES
+30-05-2022 09:38:49.525 [ERROR] es.snc.reader.dpverification.DpVerification - Wrong data, cannot upload excel
+30-05-2022 09:38:49.573 [INFO] es.snc.reader.App - Started App in 2.515 seconds (JVM running for 2.961)
+30-05-2022 09:50:13.732 [INFO] es.snc.reader.App - Starting App on SNC002 with PID 23188 (C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader\target\classes started by mperez in C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader)
+30-05-2022 09:50:13.734 [INFO] es.snc.reader.App - No active profile set, falling back to default profiles: default
+30-05-2022 09:50:17.563 [ERROR] es.snc.reader.dp.impl.DpEmployeeServiceImpl - Failed to connect with Digital People API. DpEmployeeService searchByCardId. 
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9010/clients/1/employees/searchOne": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:748)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:674)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:612)
+	at es.snc.reader.dp.impl.DpEmployeeServiceImpl.searchByCardId(DpEmployeeServiceImpl.java:152)
+	at es.snc.reader.utils.FindSetters.requestHolidayAuxDtoSetters(FindSetters.java:126)
+	at es.snc.reader.excel.impl.ExcelReaderImpl.readHolidayRequests(ExcelReaderImpl.java:178)
+	at es.snc.reader.excel.impl.ExcelReaderImpl.readExcelSheets(ExcelReaderImpl.java:77)
+	at es.snc.reader.service.impl.ServiceImpl.startService(ServiceImpl.java:49)
+	at es.snc.reader.App.init(App.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at es.snc.reader.App.main(App.java:27)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:574)
+	at java.base/sun.nio.ch.Net.connect(Net.java:563)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.Socket.connect(Socket.java:648)
+	at java.base/java.net.Socket.connect(Socket.java:597)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:182)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:474)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:569)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:341)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:362)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1261)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1194)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1082)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1016)
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:739)
+	... 33 common frames omitted
+30-05-2022 09:50:17.563 [ERROR] es.snc.reader.service.impl.ServiceImpl - Error. Employee with IdCard 72041150K not found in database. Line 2
+30-05-2022 09:50:19.618 [ERROR] es.snc.reader.dp.impl.DpCompanyServiceImpl - Failed to connect with Digital People API. DpEmployeeService searchAll. 
+org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:9010/clients/1/companies": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:748)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:674)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:612)
+	at es.snc.reader.dp.impl.DpCompanyServiceImpl.searchAll(DpCompanyServiceImpl.java:65)
+	at es.snc.reader.utils.FindSetters.companiesMapCodeAsKey(FindSetters.java:188)
+	at es.snc.reader.utils.FindSetters.requestHolidayAuxDtoSetters(FindSetters.java:107)
+	at es.snc.reader.excel.impl.ExcelReaderImpl.readHolidayRequests(ExcelReaderImpl.java:178)
+	at es.snc.reader.excel.impl.ExcelReaderImpl.readExcelSheets(ExcelReaderImpl.java:77)
+	at es.snc.reader.service.impl.ServiceImpl.startService(ServiceImpl.java:49)
+	at es.snc.reader.App.init(App.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at es.snc.reader.App.main(App.java:27)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:574)
+	at java.base/sun.nio.ch.Net.connect(Net.java:563)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.Socket.connect(Socket.java:648)
+	at java.base/java.net.Socket.connect(Socket.java:597)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:182)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:474)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:569)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:341)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:362)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1261)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1194)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1082)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1016)
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:739)
+	... 34 common frames omitted
+30-05-2022 09:50:19.619 [ERROR] es.snc.reader.service.impl.ServiceImpl - Error. Company with code ECR not found in database. Line 2
+30-05-2022 09:50:19.627 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Error, required fields are empty. Sheet: Vacaciones. From row: 2
+30-05-2022 09:50:21.673 [ERROR] es.snc.reader.dp.impl.DpEmployeeServiceImpl - Failed to connect with Digital People API. DpEmployeeService searchByCardId. 
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9010/clients/1/employees/searchOne": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:748)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:674)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:612)
+	at es.snc.reader.dp.impl.DpEmployeeServiceImpl.searchByCardId(DpEmployeeServiceImpl.java:152)
+	at es.snc.reader.utils.FindSetters.requestHolidayAuxDtoSetters(FindSetters.java:126)
+	at es.snc.reader.excel.impl.ExcelReaderImpl.readHolidayRequests(ExcelReaderImpl.java:178)
+	at es.snc.reader.excel.impl.ExcelReaderImpl.readExcelSheets(ExcelReaderImpl.java:77)
+	at es.snc.reader.service.impl.ServiceImpl.startService(ServiceImpl.java:49)
+	at es.snc.reader.App.init(App.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at es.snc.reader.App.main(App.java:27)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:574)
+	at java.base/sun.nio.ch.Net.connect(Net.java:563)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.Socket.connect(Socket.java:648)
+	at java.base/java.net.Socket.connect(Socket.java:597)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:182)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:474)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:569)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:341)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:362)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1261)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1194)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1082)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1016)
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:739)
+	... 33 common frames omitted
+30-05-2022 09:50:21.675 [ERROR] es.snc.reader.service.impl.ServiceImpl - Error. Employee with IdCard 72041150K not found in database. Line 3
+30-05-2022 09:50:23.719 [ERROR] es.snc.reader.dp.impl.DpCompanyServiceImpl - Failed to connect with Digital People API. DpEmployeeService searchAll. 
+org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:9010/clients/1/companies": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:748)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:674)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:612)
+	at es.snc.reader.dp.impl.DpCompanyServiceImpl.searchAll(DpCompanyServiceImpl.java:65)
+	at es.snc.reader.utils.FindSetters.companiesMapCodeAsKey(FindSetters.java:188)
+	at es.snc.reader.utils.FindSetters.requestHolidayAuxDtoSetters(FindSetters.java:107)
+	at es.snc.reader.excel.impl.ExcelReaderImpl.readHolidayRequests(ExcelReaderImpl.java:178)
+	at es.snc.reader.excel.impl.ExcelReaderImpl.readExcelSheets(ExcelReaderImpl.java:77)
+	at es.snc.reader.service.impl.ServiceImpl.startService(ServiceImpl.java:49)
+	at es.snc.reader.App.init(App.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at es.snc.reader.App.main(App.java:27)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:574)
+	at java.base/sun.nio.ch.Net.connect(Net.java:563)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.Socket.connect(Socket.java:648)
+	at java.base/java.net.Socket.connect(Socket.java:597)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:182)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:474)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:569)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:341)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:362)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1261)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1194)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1082)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1016)
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:739)
+	... 34 common frames omitted
+30-05-2022 09:50:23.721 [ERROR] es.snc.reader.service.impl.ServiceImpl - Error. Company with code ECR not found in database. Line 3
+30-05-2022 09:50:25.758 [ERROR] es.snc.reader.dp.impl.DpEmployeeServiceImpl - Failed to connect with Digital People API. DpEmployeeService searchByCardId. 
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9010/clients/1/employees/searchOne": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:748)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:674)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:612)
+	at es.snc.reader.dp.impl.DpEmployeeServiceImpl.searchByCardId(DpEmployeeServiceImpl.java:152)
+	at es.snc.reader.utils.FindSetters.requestHolidayAuxDtoSetters(FindSetters.java:126)
+	at es.snc.reader.excel.impl.ExcelReaderImpl.readHolidayRequests(ExcelReaderImpl.java:178)
+	at es.snc.reader.excel.impl.ExcelReaderImpl.readExcelSheets(ExcelReaderImpl.java:77)
+	at es.snc.reader.service.impl.ServiceImpl.startService(ServiceImpl.java:49)
+	at es.snc.reader.App.init(App.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at es.snc.reader.App.main(App.java:27)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:574)
+	at java.base/sun.nio.ch.Net.connect(Net.java:563)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.Socket.connect(Socket.java:648)
+	at java.base/java.net.Socket.connect(Socket.java:597)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:182)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:474)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:569)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:341)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:362)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1261)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1194)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1082)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1016)
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:739)
+	... 33 common frames omitted
+30-05-2022 09:50:25.759 [ERROR] es.snc.reader.service.impl.ServiceImpl - Error. Employee with IdCard 72041150K not found in database. Line 4
+30-05-2022 09:50:27.812 [ERROR] es.snc.reader.dp.impl.DpCompanyServiceImpl - Failed to connect with Digital People API. DpEmployeeService searchAll. 
+org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:9010/clients/1/companies": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:748)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:674)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:612)
+	at es.snc.reader.dp.impl.DpCompanyServiceImpl.searchAll(DpCompanyServiceImpl.java:65)
+	at es.snc.reader.utils.FindSetters.companiesMapCodeAsKey(FindSetters.java:188)
+	at es.snc.reader.utils.FindSetters.requestHolidayAuxDtoSetters(FindSetters.java:107)
+	at es.snc.reader.excel.impl.ExcelReaderImpl.readHolidayRequests(ExcelReaderImpl.java:178)
+	at es.snc.reader.excel.impl.ExcelReaderImpl.readExcelSheets(ExcelReaderImpl.java:77)
+	at es.snc.reader.service.impl.ServiceImpl.startService(ServiceImpl.java:49)
+	at es.snc.reader.App.init(App.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at es.snc.reader.App.main(App.java:27)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:574)
+	at java.base/sun.nio.ch.Net.connect(Net.java:563)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.Socket.connect(Socket.java:648)
+	at java.base/java.net.Socket.connect(Socket.java:597)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:182)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:474)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:569)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:341)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:362)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1261)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1194)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1082)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1016)
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:739)
+	... 34 common frames omitted
+30-05-2022 09:50:27.814 [ERROR] es.snc.reader.service.impl.ServiceImpl - Error. Company with code ECR not found in database. Line 4
+30-05-2022 09:50:27.814 [ERROR] es.snc.reader.service.impl.ServiceImpl - Error. Need a numeric value in cell 'Año del cargo'. Line 4
+30-05-2022 09:50:27.816 [INFO] es.snc.reader.excel.impl.ExcelReaderImpl - Rows readed from sheet Vacaciones: 3
+30-05-2022 09:50:28.091 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Wrong data, cannot upload excel
+30-05-2022 09:50:28.133 [INFO] es.snc.reader.App - Started App in 14.672 seconds (JVM running for 15.124)
+30-05-2022 09:56:26.362 [INFO] es.snc.reader.App - Starting App on SNC002 with PID 45068 (C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader\target\classes started by mperez in C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader)
+30-05-2022 09:56:26.364 [INFO] es.snc.reader.App - No active profile set, falling back to default profiles: default
+30-05-2022 09:56:30.182 [ERROR] es.snc.reader.dp.impl.DpEmployeeServiceImpl - Failed to connect with Digital People API. DpEmployeeService searchByCardId. 
+30-05-2022 09:56:30.184 [ERROR] es.snc.reader.service.impl.ServiceImpl - Error. Employee with IdCard 72041150K not found in database. Line 2
+30-05-2022 09:56:32.227 [ERROR] es.snc.reader.dp.impl.DpCompanyServiceImpl - Failed to connect with Digital People API. DpCompanyService searchAll. 
+30-05-2022 09:56:32.229 [ERROR] es.snc.reader.service.impl.ServiceImpl - Error. Company with code ECR not found in database. Line 2
+30-05-2022 09:56:32.237 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Error, required fields are empty. Sheet: Vacaciones. From row: 2
+30-05-2022 09:56:34.273 [ERROR] es.snc.reader.dp.impl.DpEmployeeServiceImpl - Failed to connect with Digital People API. DpEmployeeService searchByCardId. 
+30-05-2022 09:56:34.275 [ERROR] es.snc.reader.service.impl.ServiceImpl - Error. Employee with IdCard 72041150K not found in database. Line 3
+30-05-2022 09:56:36.319 [ERROR] es.snc.reader.dp.impl.DpCompanyServiceImpl - Failed to connect with Digital People API. DpCompanyService searchAll. 
+30-05-2022 09:56:36.320 [ERROR] es.snc.reader.service.impl.ServiceImpl - Error. Company with code ECR not found in database. Line 3
+30-05-2022 09:56:38.381 [ERROR] es.snc.reader.dp.impl.DpEmployeeServiceImpl - Failed to connect with Digital People API. DpEmployeeService searchByCardId. 
+30-05-2022 09:56:38.383 [ERROR] es.snc.reader.service.impl.ServiceImpl - Error. Employee with IdCard 72041150K not found in database. Line 4
+30-05-2022 09:56:40.421 [ERROR] es.snc.reader.dp.impl.DpCompanyServiceImpl - Failed to connect with Digital People API. DpCompanyService searchAll. 
+30-05-2022 09:56:40.422 [ERROR] es.snc.reader.service.impl.ServiceImpl - Error. Company with code ECR not found in database. Line 4
+30-05-2022 09:56:40.423 [ERROR] es.snc.reader.service.impl.ServiceImpl - Error. Need a numeric value in cell 'Año del cargo'. Line 4
+30-05-2022 09:56:40.426 [INFO] es.snc.reader.excel.impl.ExcelReaderImpl - Rows readed from sheet Vacaciones: 3
+30-05-2022 09:56:40.665 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Wrong data, cannot upload excel
+30-05-2022 09:56:40.708 [INFO] es.snc.reader.App - Started App in 14.634 seconds (JVM running for 15.085)
+30-05-2022 09:57:52.998 [INFO] es.snc.reader.App - Starting App on SNC002 with PID 26800 (C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader\target\classes started by mperez in C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader)
+30-05-2022 09:57:53.000 [INFO] es.snc.reader.App - No active profile set, falling back to default profiles: default
+30-05-2022 09:57:56.749 [ERROR] es.snc.reader.dp.impl.DpEmployeeServiceImpl - Failed to connect with Digital People API. DpEmployeeService searchByCardId. 
+30-05-2022 09:57:56.751 [ERROR] es.snc.reader.service.impl.ServiceImpl - Error. Employee with IdCard 72041150K not found in database. Line 2
+30-05-2022 09:57:58.798 [ERROR] es.snc.reader.dp.impl.DpCompanyServiceImpl - Failed to connect with Digital People API. DpCompanyService searchAll. 
+30-05-2022 09:57:58.800 [ERROR] es.snc.reader.service.impl.ServiceImpl - Error. Company with code ECR not found in database. Line 2
+30-05-2022 09:57:58.807 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Error, required fields are empty. Sheet: Vacaciones. From row: 2
+30-05-2022 09:58:00.844 [ERROR] es.snc.reader.dp.impl.DpEmployeeServiceImpl - Failed to connect with Digital People API. DpEmployeeService searchByCardId. 
+30-05-2022 09:58:00.844 [ERROR] es.snc.reader.service.impl.ServiceImpl - Error. Employee with IdCard 72041150K not found in database. Line 3
+30-05-2022 09:58:02.891 [ERROR] es.snc.reader.dp.impl.DpCompanyServiceImpl - Failed to connect with Digital People API. DpCompanyService searchAll. 
+30-05-2022 09:58:02.893 [ERROR] es.snc.reader.service.impl.ServiceImpl - Error. Company with code ECR not found in database. Line 3
+30-05-2022 09:58:04.936 [ERROR] es.snc.reader.dp.impl.DpEmployeeServiceImpl - Failed to connect with Digital People API. DpEmployeeService searchByCardId. 
+30-05-2022 09:58:04.937 [ERROR] es.snc.reader.service.impl.ServiceImpl - Error. Employee with IdCard 72041150K not found in database. Line 4
+30-05-2022 09:58:06.987 [ERROR] es.snc.reader.dp.impl.DpCompanyServiceImpl - Failed to connect with Digital People API. DpCompanyService searchAll. 
+30-05-2022 09:58:06.989 [ERROR] es.snc.reader.service.impl.ServiceImpl - Error. Company with code ECR not found in database. Line 4
+30-05-2022 09:58:06.991 [INFO] es.snc.reader.excel.impl.ExcelReaderImpl - Rows readed from sheet Vacaciones: 3
+30-05-2022 09:58:07.265 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Wrong data, cannot upload excel
+30-05-2022 09:58:07.309 [INFO] es.snc.reader.App - Started App in 14.581 seconds (JVM running for 15.03)
+30-05-2022 09:58:36.785 [INFO] es.snc.reader.App - Starting App on SNC002 with PID 42652 (C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader\target\classes started by mperez in C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader)
+30-05-2022 09:58:36.787 [INFO] es.snc.reader.App - No active profile set, falling back to default profiles: default
+30-05-2022 09:58:39.255 [INFO] es.snc.reader.excel.impl.ExcelReaderImpl - Rows readed from sheet Vacaciones: 3
+30-05-2022 09:58:39.640 [ERROR] es.snc.reader.dpverification.DpVerification - Request holiday for employee 72041150K, from date 2022-03-23 until date 2022-04-25 was not created.Not enough remaining time for the holidays.
+30-05-2022 09:58:39.682 [ERROR] es.snc.reader.dpverification.DpVerification - Request holiday for employee 72041150K, from date 2022-08-08 until date 2022-08-12 was not created.Error message: UNPROCESSABLE_OVERLAPPING_DATES
+30-05-2022 09:58:39.722 [ERROR] es.snc.reader.dpverification.DpVerification - Request holiday for employee 72041150K, from date 2022-08-08 until date 2022-08-12 was not created.Error message: UNPROCESSABLE_OVERLAPPING_DATES
+30-05-2022 09:58:39.722 [ERROR] es.snc.reader.dpverification.DpVerification - Wrong data, cannot upload excel
+30-05-2022 09:58:39.766 [INFO] es.snc.reader.App - Started App in 3.244 seconds (JVM running for 3.694)
+30-05-2022 09:58:59.022 [INFO] es.snc.reader.App - Starting App on SNC002 with PID 32620 (C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader\target\classes started by mperez in C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader)
+30-05-2022 09:58:59.024 [INFO] es.snc.reader.App - No active profile set, falling back to default profiles: default
+30-05-2022 09:59:00.963 [ERROR] es.snc.reader.service.impl.ServiceImpl - Error. Need a numeric value in cell 'Año del cargo'. Line 4
+30-05-2022 09:59:00.964 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Error, required fields are empty. Sheet: Vacaciones. From row: 4
+30-05-2022 09:59:00.965 [INFO] es.snc.reader.excel.impl.ExcelReaderImpl - Rows readed from sheet Vacaciones: 3
+30-05-2022 09:59:01.150 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Wrong data, cannot upload excel
+30-05-2022 09:59:01.194 [INFO] es.snc.reader.App - Started App in 2.435 seconds (JVM running for 2.883)
+30-05-2022 09:59:53.571 [INFO] es.snc.reader.App - Starting App on SNC002 with PID 38112 (C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader\target\classes started by mperez in C:\Users\mperez\Desktop\proyectos_soincon\dp-holidays-reader)
+30-05-2022 09:59:53.574 [INFO] es.snc.reader.App - No active profile set, falling back to default profiles: default
+30-05-2022 09:59:55.587 [ERROR] es.snc.reader.dp.impl.DpEmployeeServiceImpl - Failed to connect with Digital People API. DpEmployeeService searchByCardId. 
+30-05-2022 09:59:55.588 [ERROR] es.snc.reader.service.impl.ServiceImpl - Error. Employee with IdCard asdfas1 not found in database. Line 5
+30-05-2022 09:59:55.588 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Error, required fields are empty. Sheet: Vacaciones. From row: 5
+30-05-2022 09:59:55.588 [INFO] es.snc.reader.excel.impl.ExcelReaderImpl - Rows readed from sheet Vacaciones: 4
+30-05-2022 09:59:55.775 [ERROR] es.snc.reader.excel.impl.ExcelReaderImpl - Wrong data, cannot upload excel
+30-05-2022 09:59:55.823 [INFO] es.snc.reader.App - Started App in 2.524 seconds (JVM running for 2.998)

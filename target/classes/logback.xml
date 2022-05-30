@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	
+	<property name="logFileName" value="logFile.log" />
+	<property name="logDirectory" value="logs" />
+	<property name="logArchivedDir" value="archived" />
+	
+	<appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${logDirectory}\${logFileName}</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+			<fileNamePattern>${logDirectory}/${logArchivedDir}/${logFileName}.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
+			<maxFileSize>10MB</maxFileSize>
+			<totalSizeCap>1GB</totalSizeCap>
+			<maxHistory>5</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%d{dd-MM-yyyy HH:mm:ss.SSS} [%p] %c - %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{dd-MM-yyyy HH:mm:ss.SSS} [%p] %c - %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<root level="info">
+		<appender-ref ref="file" />
+	</root>
+	
+	<root level="info">
+		<appender-ref ref="console" />
+	</root>
+	
+</configuration>
